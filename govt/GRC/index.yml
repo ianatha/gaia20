@@ -1,0 +1,6 @@
+pubhealth:
+  _web:
+    - cname: eody.gov.gr
+  covid19:
+    _web:
+      - redirect: {lang: EL, url: https://eody.gov.gr/epidimiologika-statistika-dedomena/imerisies-ektheseis-covid-19/}
