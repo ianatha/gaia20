@@ -47,7 +47,7 @@ defmodule Gaia20.Data do
     |> File.stream!
     |> CSV.decode
     |> Stream.drop(1)
-    |> Stream.map(fn {:ok, [iso2, _iso3, name, _auth_name, auth_homepage, covid_homepage, _covid_homepage_lang]} ->
+    |> Stream.map(fn {:ok, [iso2, _iso3, name, _auth_name, auth_homepage, covid_homepage, _covid_homepage_lang, _subregion, _population]} ->
       %{
         iso: iso2,
         name: name,
