@@ -1,57 +1,57 @@
-iso,name,authority_name,authority_homepage,covid_dailyreport,covid_dailyreport_lang
-AK,Alaska,Alaska Department of Health and Social Services,dhss.alaska.gov,http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx,EN
-AL,Alabama,Alabama Department of Public Health,www.adph.org,https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7,EN
-AR,Arkansas,Arkansas Department of Health,www.healthy.arkansas.gov,https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus,EN
-AS,American Samoa,American Samoa Government Department of Human and Social Services,http://dhss.as/,https://www.americansamoa.gov/covid-19-advisories,
-AZ,Arizona,Arizona Department of Health Services,www.azdhs.gov/,https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home,EN
-CA,California,California Department of Public Health,www.cdph.ca.gov,https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx,EN
-CO,Colorado,Colorado Department of Public Health and Environment,www.colorado.gov/cdphe,https://covid19.colorado.gov/data,EN
-CT,Connecticut,Connecticut State Department of Public Health,www.ct.gov/dph/site/default.asp,https://portal.ct.gov/Coronavirus,EN
-DC,District of Columbia,District of Columbia Department of Health,doh.dc.gov/,https://coronavirus.dc.gov/page/coronavirus-surveillance-data,
-DE,Delaware,Delaware Division of Public Health,www.dhss.delaware.gov/dhss/dph/index.html,https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html,EN
-FL,Florida,Florida Department of Health,www.floridahealth.gov/,https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/,EN
-GA,Georgia,Georgia Department of Public Health,dph.georgia.gov/,https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report,EN
-GU,Guam,"Guam Department of Public Health and Social Services, Division of Public Health",https://dphss.guam.gov/dph/,https://ghs.guam.gov/coronavirus-covid-19,
-HI,Hawaii,Hawaii State Department of Health,health.hawaii.gov/,https://health.hawaii.gov/coronavirusdisease2019/,EN
-IA,Iowa,Iowa Department of Public Health,idph.iowa.gov,https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus,EN
-ID,Idaho,Idaho Department of Health and Welfare,www.healthandwelfare.idaho.gov/,https://coronavirus.idaho.gov/,EN
-IL,Illinois,Illinois Department of Public Health,www.idph.state.il.us/,http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus,EN
-IN,Indiana,Indiana State Department of Health,www.in.gov/isdh/,https://www.in.gov/isdh/28470.htm,EN
-KS,Kansas,Kansas Department of Health and Environment,www.kdheks.gov/,https://kdhe.maps.arcgis.com/apps/opsdashboard/index.html#/05f4169dc6394aa98895072b94734134,EN
-KY,Kentucky,Kentucky Department for Public Health,chfs.ky.gov/agencies/dph/Pages/default.aspx,https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx,EN
-LA,Louisiana,Louisiana Department of Health,dhh.louisiana.gov/,http://ldh.la.gov/Coronavirus/,EN
-MA,Massachusetts,Massachusetts Department of Public Health,www.mass.gov/orgs/department-of-public-health,https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring,EN
-MD,Maryland,Maryland Department of Health,dhmh.maryland.gov/Pages/Index.aspx,https://coronavirus.maryland.gov/,EN
-ME,Maine,Maine Department of Health and Human Services,www.maine.gov/dhhs/index.shtml,https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml,EN
-MI,Michigan,Michigan Department of Health and Human Services,www.michigan.gov/mdch,"https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html",EN
-MN,Minnesota,Minnesota Department of Health,www.health.state.mn.us/,https://www.health.state.mn.us/diseases/coronavirus/situation.html,EN
-MO,Missouri,Missouri Department of Health and Senior Services,health.mo.gov/index.php,https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php,EN
-MP,Northern Mariana Islands,"Commonwealth of the Northern Mariana Islands, Commonwealth Healthcare Corporation",http://chcc.gov.mp/,https://www.chcc.gov.mp/coronavirusinformation.php,
-MS,Mississippi,Mississippi State Department of Health,www.msdh.state.ms.us/,"https://msdh.ms.gov/msdhsite/_static/14,0,420.html",EN
-MT,Montana,Montana Department of Public Health and Human Services,dphhs.mt.gov/,https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b,EN
-NC,North Carolina,North Carolina Department of Health and Human Services,http://www.ncdhhs.gov/,https://www.ncdhhs.gov/covid-19-case-count-nc,EN
-ND,North Dakota,North Dakota Department of Health,http://www.ndhealth.gov/,https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases,EN
-NE,Nebraska,Nebraska Department of Health and Human Services,http://dhhs.ne.gov/Pages/default.aspx,https://nebraska.maps.arcgis.com/apps/opsdashboard/index.html#/4213f719a45647bc873ffb58783ffef3,EN
-NH,New Hampshire,New Hampshire Department of Health and Human Services,www.dhhs.nh.gov/,https://www.dhhs.nh.gov/dphs/cdcs/2019-ncov.htm,EN
-NJ,New Jersey,New Jersey Department of Health,www.state.nj.us/health/,https://www.nj.gov/health,EN
-NM,New Mexico,New Mexico Department of Health,nmhealth.org,https://cv.nmhealth.org/,EN
-NV,Nevada,Nevada Division of Public and Behavioral Health,dpbh.nv.gov/,https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9,EN
-NY,New York,New York State Department of Health,www.health.ny.gov/,https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases,EN
-OH,Ohio,Ohio Department of Health,www.odh.ohio.gov/,https://coronavirus.ohio.gov/wps/portal/gov/covid-19/,EN
-OK,Oklahoma,Oklahoma State Department of Health,www.ok.gov/health/,https://coronavirus.health.ok.gov/,EN
-OR,Oregon,"Oregon Health Authority, Public Health Division",www.oregon.gov/oha/ph/pages/index.aspx,https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx,EN
-PA,Pennsylvania,Pennsylvania Department of Health,www.health.pa.gov/Pages/default.aspx,https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx,EN
-PR,Puerto Rico,"Puerto Rico Department of Health (Departamento de Salud, Gobierno de Puerto Rico)",http://www.salud.gov.pr/Pages/Home.aspx,https://estadisticas.pr/en/covid-19,
-RI,Rhode Island,Rhode Island Department of Health,www.health.state.ri.us/,https://health.ri.gov/data/covid-19/,EN
-SC,South Carolina,South Carolina Department of Health and Environmental Control,http://www.scdhec.gov/,https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19,EN
-SD,South Dakota,South Dakota Department of Health,http://doh.sd.gov/,https://doh.sd.gov/news/Coronavirus.aspx,EN
-TN,Tennessee,Tennessee Department of Health,www.tn.gov/health.html,https://www.tn.gov/health/cedep/ncov.html,EN
-TX,Texas,Texas Department of State Health Services,www.dshs.state.tx.us/,https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83,EN
-UT,Utah,Utah Department of Health,health.utah.gov/,https://coronavirus-dashboard.utah.gov/,EN
-VA,Virginia,Virginia Department of Health,http://www.vdh.state.va.us/,https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no,EN
-VI,"Virgin Islands, U.S.",US Virgin Islands Department of Health,https://doh.vi.gov/,https://doh.vi.gov/,
-VT,Vermont,Vermont Department of Health,healthvermont.gov/,https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus,EN
-WA,Washington,Washington State Department of Health,www.doh.wa.gov/,https://www.doh.wa.gov/Emergencies/Coronavirus,EN
-WI,Wisconsin,Wisconsin Department of Health Services,www.dhs.wisconsin.gov/,https://www.dhs.wisconsin.gov/outbreaks/index.htm,EN
-WV,West Virginia,"West Virginia Department of Health and Human Resources, Bureau for Public Health",www.dhhr.wv.gov/bph/Pages/default.aspx,https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx,EN
-WY,Wyoming,Wyoming Department of Health,health.wyo.gov/,https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/,EN
+ISO-3166-2 w/o prefix,State Name,Authority Name in EN,Authority Domain Name,COVID19 Daily Report Website,COVID19 Daily Report Website Language,ChiefExec,ChiefExec.NameFirst,ChiefExec.NameLast,StateOrTerritory,TaxAuth,Legislature
+AL,Alabama,Alabama Department of Public Health,www.adph.org,https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7,EN,http://www.governor.alabama.gov/,Kay,Ivey,STATE,,http://www.legislature.state.al.us/aliswww/default.aspx
+AK,Alaska,Alaska Department of Health and Social Services,dhss.alaska.gov,http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx,EN,http://gov.state.ak.us/,Mike,Dunleavy,STATE,,http://w3.legis.state.ak.us/index.php
+AS,American Samoa,American Samoa Government Department of Human and Social Services,http://dhss.as/,https://www.americansamoa.gov/covid-19-advisories,,https://www.americansamoa.gov/office-of-the-governor,Lolo Matalasi,Moliga,TERRITORY,,https://www.americansamoa.gov/legislative-branch-fono
+AZ,Arizona,Arizona Department of Health Services,www.azdhs.gov/,https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home,EN,http://www.governor.state.az.us/,Doug,Ducey,STATE,,https://www.azleg.gov/
+AR,Arkansas,Arkansas Department of Health,www.healthy.arkansas.gov,https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus,EN,http://www.arkansas.gov/governor/,Asa,Hutchinson,STATE,,http://www.arkleg.state.ar.us/assembly/2019/2019R/Pages/Home.aspx
+CA,California,California Department of Public Health,www.cdph.ca.gov,https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx,EN,http://gov.ca.gov/,Gavin,Newsom,STATE,,http://leginfo.legislature.ca.gov/
+CO,Colorado,Colorado Department of Public Health and Environment,www.colorado.gov/cdphe,https://covid19.colorado.gov/data,EN,http://www.colorado.gov/governor/,Jared,Polis,STATE,,http://leg.colorado.gov/
+CT,Connecticut,Connecticut State Department of Public Health,www.ct.gov/dph/site/default.asp,https://portal.ct.gov/Coronavirus,EN,https://portal.ct.gov/governor/,Ned,Lamont,STATE,,https://www.cga.ct.gov/
+DE,Delaware,Delaware Division of Public Health,www.dhss.delaware.gov/dhss/dph/index.html,https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html,EN,http://governor.delaware.gov/,John,Carney,STATE,,http://legis.delaware.gov/
+DC,District of Columbia,District of Columbia Department of Health,doh.dc.gov/,https://coronavirus.dc.gov/page/coronavirus-surveillance-data,EN,,,,,,http://dccouncil.us/legislation
+FL,Florida,Florida Department of Health,www.floridahealth.gov/,https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/,EN,http://www.flgov.com/,Ron,DeSantis,STATE,,http://www.leg.state.fl.us/Welcome/index.cfm?CFID=156970768&CFTOKEN=65926224
+GA,Georgia,Georgia Department of Public Health,dph.georgia.gov/,https://dph.georgia.gov/georgia-department-public-health-covid-19-daily-status-report,EN,http://gov.georgia.gov/,Brian,Kemp,STATE,,http://www.legis.ga.gov/en-US/default.aspx
+GU,Guam,"Guam Department of Public Health and Social Services, Division of Public Health",https://dphss.guam.gov/dph/,https://ghs.guam.gov/coronavirus-covid-19,,http://governor.guam.gov/,Lou,Leon Guerrero,TERRITORY,,http://guamlegislature.com/index/
+HI,Hawaii,Hawaii State Department of Health,health.hawaii.gov/,https://health.hawaii.gov/coronavirusdisease2019/,EN,http://www.hawaii.gov/gov/,David,Ige,STATE,,http://www.capitol.hawaii.gov/
+ID,Idaho,Idaho Department of Health and Welfare,www.healthandwelfare.idaho.gov/,https://coronavirus.idaho.gov/,EN,http://gov.idaho.gov/,Brad,Little,STATE,,https://legislature.idaho.gov/
+IL,Illinois,Illinois Department of Public Health,www.idph.state.il.us/,http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus,EN,http://www.illinois.gov/gov/,JB,Pritzker,STATE,,http://www.ilga.gov/
+IN,Indiana,Indiana State Department of Health,www.in.gov/isdh/,https://www.in.gov/isdh/28470.htm,EN,http://www.in.gov/gov/index.htm,Eric,Holcomb,STATE,,http://iga.in.gov/
+IA,Iowa,Iowa Department of Public Health,idph.iowa.gov,https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus,EN,https://governor.iowa.gov/,Kim,Reynolds,STATE,,https://www.legis.iowa.gov/
+KS,Kansas,Kansas Department of Health and Environment,www.kdheks.gov/,https://kdhe.maps.arcgis.com/apps/opsdashboard/index.html#/05f4169dc6394aa98895072b94734134,EN,http://www.governor.ks.gov/,Laura,Kelly,STATE,,http://www.kslegislature.org/li/
+KY,Kentucky,Kentucky Department for Public Health,chfs.ky.gov/agencies/dph/Pages/default.aspx,https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx,EN,http://governor.ky.gov/,Andy,Beshear,STATE,,https://legislature.ky.gov/Pages/index.aspx
+LA,Louisiana,Louisiana Department of Health,dhh.louisiana.gov/,http://ldh.la.gov/Coronavirus/,EN,http://www.gov.state.la.us/,John Bel,Edwards,STATE,,http://www.legis.la.gov/legis/home.aspx
+ME,Maine,Maine Department of Health and Human Services,www.maine.gov/dhhs/index.shtml,https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml,EN,https://www.maine.gov/governor/mills/,Janet,Mills,STATE,,http://legislature.maine.gov/
+MD,Maryland,Maryland Department of Health,dhmh.maryland.gov/Pages/Index.aspx,https://coronavirus.maryland.gov/,EN,https://governor.maryland.gov/,Larry,Hogan,STATE,,http://mgaleg.maryland.gov/webmga/frm1st.aspx?tab=home
+MA,Massachusetts,Massachusetts Department of Public Health,www.mass.gov/orgs/department-of-public-health,https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring,EN,http://www.mass.gov/gov,Charlie,Baker,STATE,,https://malegislature.gov/
+MI,Michigan,Michigan Department of Health and Human Services,www.michigan.gov/mdch,"https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html",EN,http://www.michigan.gov/gov,Gretchen,Whitmer,STATE,,http://www.legislature.mi.gov/(S(vyioe1zsf0d4hlnnu5y3k0c2))/mileg.aspx?page=home
+MN,Minnesota,Minnesota Department of Health,www.health.state.mn.us/,https://www.health.state.mn.us/diseases/coronavirus/situation.html,EN,http://www.governor.state.mn.us/,Tim,Walz,STATE,,https://www.leg.state.mn.us/
+MS,Mississippi,Mississippi State Department of Health,www.msdh.state.ms.us/,"https://msdh.ms.gov/msdhsite/_static/14,0,420.html",EN,,Tate,Reeves,STATE,,http://www.legislature.ms.gov/
+MO,Missouri,Missouri Department of Health and Senior Services,health.mo.gov/index.php,https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php,EN,http://governor.mo.gov/,Mike,Parson,STATE,,https://www.mo.gov/government/legislative-branch/
+MT,Montana,Montana Department of Public Health and Human Services,dphhs.mt.gov/,https://montana.maps.arcgis.com/apps/MapSeries/index.html?appid=7c34f3412536439491adcc2103421d4b,EN,http://governor.mt.gov/,Steve,Bullock,STATE,,https://leg.mt.gov/
+NE,Nebraska,Nebraska Department of Health and Human Services,http://dhhs.ne.gov/Pages/default.aspx,https://nebraska.maps.arcgis.com/apps/opsdashboard/index.html#/4213f719a45647bc873ffb58783ffef3,EN,http://www.governor.nebraska.gov/,Pete,Ricketts,STATE,,https://nebraskalegislature.gov/
+NV,Nevada,Nevada Division of Public and Behavioral Health,dpbh.nv.gov/,https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9,EN,http://gov.nv.gov/,Steve,Sisolak,STATE,,https://www.leg.state.nv.us/
+NH,New Hampshire,New Hampshire Department of Health and Human Services,www.dhhs.nh.gov/,https://www.dhhs.nh.gov/dphs/cdcs/2019-ncov.htm,EN,http://www.state.nh.us/governor/,Chris,Sununu,STATE,,http://www.gencourt.state.nh.us/
+NJ,New Jersey,New Jersey Department of Health,www.state.nj.us/health/,https://www.nj.gov/health,EN,http://www.state.nj.us/governor/,Phil,Murphy,STATE,,https://www.njleg.state.nj.us/
+NM,New Mexico,New Mexico Department of Health,nmhealth.org,https://cv.nmhealth.org/,EN,http://www.governor.state.nm.us/,Michelle,Lujan Grisham,STATE,,https://www.nmlegis.gov/
+NY,New York,New York State Department of Health,www.health.ny.gov/,https://coronavirus.health.ny.gov/county-county-breakdown-positive-cases,EN,http://www.governor.ny.gov/,Andrew,Cuomo,STATE,,https://nyassembly.gov/
+NC,North Carolina,North Carolina Department of Health and Human Services,http://www.ncdhhs.gov/,https://www.ncdhhs.gov/covid-19-case-count-nc,EN,http://www.governor.state.nc.us/,Roy,Cooper,STATE,,https://www.ncleg.gov/
+ND,North Dakota,North Dakota Department of Health,http://www.ndhealth.gov/,https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases,EN,http://governor.nd.gov/,Doug,Burgum,STATE,,https://www.legis.nd.gov/
+MP,Northern Mariana Islands,"Commonwealth of the Northern Mariana Islands, Commonwealth Healthcare Corporation",http://chcc.gov.mp/,https://www.chcc.gov.mp/coronavirusinformation.php,,http://www.gov.mp/,Ralph Deleon Guerrero,Torres,TERRITORY,,http://www.cnmileg.gov.mp/
+OH,Ohio,Ohio Department of Health,www.odh.ohio.gov/,https://coronavirus.ohio.gov/wps/portal/gov/covid-19/,EN,http://governor.ohio.gov/,Mike,DeWine,STATE,,https://www.legislature.ohio.gov/
+OK,Oklahoma,Oklahoma State Department of Health,www.ok.gov/health/,https://coronavirus.health.ok.gov/,EN,http://www.gov.ok.gov/,Kevin,Stitt,STATE,,http://www.oklegislature.gov/
+OR,Oregon,"Oregon Health Authority, Public Health Division",www.oregon.gov/oha/ph/pages/index.aspx,https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx,EN,http://governor.oregon.gov/,Kate,Brown,STATE,,https://www.oregonlegislature.gov/
+PA,Pennsylvania,Pennsylvania Department of Health,www.health.pa.gov/Pages/default.aspx,https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx,EN,http://www.governor.state.pa.us/,Tom,Wolf,STATE,,https://www.legis.state.pa.us/
+PR,Puerto Rico,"Puerto Rico Department of Health (Departamento de Salud, Gobierno de Puerto Rico)",http://www.salud.gov.pr/Pages/Home.aspx,https://estadisticas.pr/en/covid-19,,http://www.fortaleza.pr.gov/,Wanda,Vazquez Garced,TERRITORY,,https://www.oslpr.org/
+RI,Rhode Island,Rhode Island Department of Health,www.health.state.ri.us/,https://health.ri.gov/data/covid-19/,EN,http://www.governor.state.ri.us/,Gina,Raimondo,STATE,,http://www.rilin.state.ri.us/Pages/Default.aspx
+SC,South Carolina,South Carolina Department of Health and Environmental Control,http://www.scdhec.gov/,https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19,EN,http://governor.sc.gov/,Henry,McMaster,STATE,,https://www.scstatehouse.gov/
+SD,South Dakota,South Dakota Department of Health,http://doh.sd.gov/,https://doh.sd.gov/news/Coronavirus.aspx,EN,http://sd.gov/governor/,Kristi,Noem,STATE,,http://sdlegislature.gov/
+TN,Tennessee,Tennessee Department of Health,www.tn.gov/health.html,https://www.tn.gov/health/cedep/ncov.html,EN,https://www.tn.gov/governor,Bill,Lee,STATE,,http://www.legislature.state.tn.us/
+TX,Texas,Texas Department of State Health Services,www.dshs.state.tx.us/,https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83,EN,http://www.governor.state.tx.us/,Greg,Abbott,STATE,,https://capitol.texas.gov/
+UT,Utah,Utah Department of Health,health.utah.gov/,https://coronavirus-dashboard.utah.gov/,EN,http://www.utah.gov/governor/,Gary,Herbert,STATE,,https://le.utah.gov/
+VT,Vermont,Vermont Department of Health,healthvermont.gov/,https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus,EN,http://www.vermont.gov/governor/,Phil,Scott,STATE,,https://legislature.vermont.gov/
+VI,Virgin Islands,US Virgin Islands Department of Health,https://doh.vi.gov/,https://doh.vi.gov/,,https://www.vi.gov/,Ralph,Northam,TERRITORY,,http://www.legvi.org/
+VA,Virginia,Virginia Department of Health,http://www.vdh.state.va.us/,https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no,EN,http://www.governor.virginia.gov/,Albert,Bryan,STATE,,https://virginiageneralassembly.gov/
+WA,Washington,Washington State Department of Health,www.doh.wa.gov/,https://www.doh.wa.gov/Emergencies/Coronavirus,EN,http://www.governor.wa.gov/,Jay,Inslee,STATE,,http://leg.wa.gov/
+WV,West Virginia,"West Virginia Department of Health and Human Resources, Bureau for Public Health",www.dhhr.wv.gov/bph/Pages/default.aspx,https://dhhr.wv.gov/Coronavirus%20Disease-COVID-19/Pages/default.aspx,EN,http://www.governor.wv.gov/,Jim,Justice,STATE,,http://www.wvlegislature.gov/
+WI,Wisconsin,Wisconsin Department of Health Services,www.dhs.wisconsin.gov/,https://www.dhs.wisconsin.gov/outbreaks/index.htm,EN,http://www.wisgov.state.wi.us/,Tony,Evers,STATE,,http://legis.wisconsin.gov/
+WY,Wyoming,Wyoming Department of Health,health.wyo.gov/,https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/,EN,http://governor.wy.gov/,Mark,Gordon,STATE,,https://www.wyoleg.gov/

@@ -3,10 +3,10 @@ defmodule Gaia20.Data do
 
   def start_link(:ok) do
     us_data = us_data_from_csv()
-    |> Enum.flat_map(&dns_entries_from_us/1)
+    |> Enum.flat_map(& dns_entries(".us", &1))
 
     world_data = world_data_from_csv()
-    |> Enum.flat_map(&dns_entries_from_world/1)
+    |> Enum.flat_map(& dns_entries("", &1))
 
     data = (world_data ++ us_data) |> Enum.into(%{})
 
@@ -47,14 +47,19 @@ defmodule Gaia20.Data do
     |> File.stream!
     |> CSV.decode
     |> Stream.drop(1)
-    |> Stream.map(fn {:ok, [iso2, _iso3, name, _auth_name, auth_homepage, covid_homepage, _covid_homepage_lang, _subregion, _population]} ->
-      %{
-        iso: iso2,
-        name: name,
-        auth_homepage: auth_homepage,
-        covid_homepage: covid_homepage
-      }
-    end)
+    |> Stream.map(
+      fn {:ok, [iso2, _iso3, name, _auth_name, auth_homepage, covid_homepage, _covid_homepage_lang, _subregion, _regionalblocs, _population, chiefexec, _ceremonial_chiefexec, taxauth, legis]} ->
+        %{
+          iso: iso2,
+          name: name,
+          pubhealth: auth_homepage,
+          pubhealth_covid19: covid_homepage,
+          chiefexec: chiefexec,
+          taxauth: taxauth,
+          legis: legis
+        }
+      end
+    )
   end
 
   def us_data_from_csv() do
@@ -63,37 +68,34 @@ defmodule Gaia20.Data do
     |> File.stream!
     |> CSV.decode
     |> Stream.drop(1)
-    |> Stream.map(fn {:ok, [iso, name, auth_name, auth_homepage, covid_homepage, _covid_homepage_lang]} ->
+    |> Stream.map(fn {:ok, [iso, name, _pubhealth_name, pubhealth, pubhealth_covid19, _covid_homepage_lang, chiefexec, _c1, _c2, _state_or_territory, taxauth, legis]} ->
       %{
         iso: iso,
         name: name,
-        auth_name: auth_name,
-        auth_homepage: auth_homepage,
-        covid_homepage: covid_homepage
+        pubhealth: pubhealth,
+        pubhealth_covid19: pubhealth_covid19,
+        chiefexec: chiefexec,
+        taxauth: taxauth,
+        legis: legis
       }
     end)
   end
 
-  def dns_entries_from_us(%{iso: iso, name: name, auth_homepage: auth_homepage, covid_homepage: covid_homepage}) do
-    keyed_name = name |> String.downcase() |> String.replace(" ", "_")
-
-    [
-      {"pubhealth.#{iso |> String.downcase}.us.gaia20.com", {:redirect, auth_homepage}},
-      {"pubhealth.#{keyed_name}.us.gaia20.com", {:redirect, auth_homepage}},
-      {"covid19.pubhealth.#{iso |> String.downcase}.us.gaia20.com", {:redirect, covid_homepage}},
-      {"covid19.pubhealth.#{keyed_name}.us.gaia20.com", {:redirect, covid_homepage}},
+  def dns_entries(suffix, %{iso: iso, name: name, pubhealth: pubhealth, pubhealth_covid19: pubhealth_covid19, chiefexec: chiefexec, taxauth: taxauth, legis: legis}) do
+    names = [
+      (iso |> String.downcase) <> suffix,
+      (name |> String.downcase() |> String.replace(" ", "_")) <> suffix
     ]
-  end
 
-  def dns_entries_from_world(%{iso: iso, name: name, auth_homepage: auth_homepage, covid_homepage: covid_homepage}) do
-    keyed_name = name |> String.downcase() |> String.replace(" ", "_")
-
-    [
-      {"pubhealth.#{iso |> String.downcase}.gaia20.com", {:redirect, auth_homepage}},
-      {"pubhealth.#{keyed_name}.gaia20.com", {:redirect, auth_homepage}},
-      {"covid19.pubhealth.#{iso |> String.downcase}.gaia20.com", {:redirect, covid_homepage}},
-      {"covid19.pubhealth.#{keyed_name}.gaia20.com", {:redirect, covid_homepage}},
-    ]
-    |> Enum.filter(fn {_k, {:redirect, v}} -> v != "" end)
+    names
+    |> Enum.flat_map(fn name ->
+      [
+        {"pubhealth.#{name}.gaia20.com", {:redirect, pubhealth}},
+        {"covid19.pubhealth.#{name}.gaia20.com", {:redirect, pubhealth_covid19}},
+        {"chiefexec.#{name}.gaia20.com", {:redirect, chiefexec}},
+        {"taxauth.#{name}.gaia20.com", {:redirect, taxauth}},
+        {"legis.#{name}.gaia20.com", {:redirect, legis}},
+      ] |> Enum.filter(fn {_k, {:redirect, v}} -> v != "" end)
+    end)
   end
 end
