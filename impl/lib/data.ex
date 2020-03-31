@@ -23,6 +23,9 @@ defmodule Gaia20.Data do
 
   def to_html(entries) do
     entries_rows = (entries
+    |> Enum.sort_by(fn {k, _} ->
+      k |> String.split(".") |> Enum.reverse()
+    end)
     |> Enum.map(fn {k, {:redirect, v}} ->
       ~s(<tr><td><a href="http://#{k}">#{k}</a></td><td>#{v}</td></tr>)
     end)
