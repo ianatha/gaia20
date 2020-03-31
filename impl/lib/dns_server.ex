@@ -2,10 +2,10 @@ defmodule Gaia20.DNSServer do
   @moduledoc """
   Example implementing DNS.Server behaviour
   """
-  @behaviour DNS.Server
+  @behaviour Gaia20.GenericDNSServer
 
   require Logger
-  use DNS.Server
+  use Gaia20.GenericDNSServer
 
   def generate_soa(record) do
     {'gaia20.com', 'community.gaia20.com', 2018110201, 3600, 1800, 604800, 86400}
@@ -15,8 +15,6 @@ defmodule Gaia20.DNSServer do
     'dns1.gaia20.org'
   end
 
-  @spec handle(%{anlist: any, header: %{qr: any}, qdlist: nonempty_maybe_improper_list}, any) ::
-          %{anlist: [map], header: %{qr: false}, qdlist: []}
   def handle(record, _cl) do
     my_public_ip = {35, 202, 252, 226}
 
@@ -53,7 +51,6 @@ defmodule Gaia20.DNSServer do
           IO.inspect(:error)
           %{answer_prototype | header: %{answer_prototype.header | rcode: 3}}
         {:redirect, redirect} ->
-          IO.inspect(:good)
           answer_data = case query.type do
             :a -> my_public_ip
             :txt -> [redirect]
