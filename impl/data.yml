@@ -1,5 +1,8 @@
 world:
-  pubhealth_web: https://www.who.int/
+  pubhealth: "World Health Organization"
+  pubhealth_web: https://www.who.int
+  pubhealth_covid: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports
+  pubhealth_covid_lang: "EN"
   _jurisdictions:
     AD:
       iso: "AD"
@@ -1153,6 +1156,7 @@ world:
             01:
               iso: "01"
               name: "Alameda"
+              pubhealth: "http://www.acphd.org/"
               pubhealth_covid19: "http://www.acphd.org/2019-ncov.aspx"
               pubhealth_covid19_lang: "EN"
             02:
@@ -1231,9 +1235,9 @@ world:
             19:
               iso: "19"
               name: "Los Angeles"
+              pubhealth_web: "publichealth.lacounty.gov"              
               pubhealth_covid19: "http://publichealth.lacounty.gov/media/Coronavirus/locations.htm"
               pubhealth_covid19_lang: "EN"
-              pubhealth_web: "publichealth.lacounty.gov"
             20:
               iso: "20"
               name: "Madera"
@@ -1449,7 +1453,7 @@ world:
           chiefexec_fn: "Ron"
           chiefexec_ln: "DeSantis"
           iso: "FL"
-          legis: "http://www.leg.state.fl.us/Welcome/index.cfm?CFID=156970768&CFTOKEN=65926224"
+          legis: "http://www.leg.state.fl.us/Welcome/index.cfm"
           name: "Florida"
           pubhealth: "Florida Department of Health"
           pubhealth_covid19: "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429/"
@@ -1602,7 +1606,7 @@ world:
           chiefexec_fn: "Gretchen"
           chiefexec_ln: "Whitmer"
           iso: "MI"
-          legis: "http://www.legislature.mi.gov/(S(vyioe1zsf0d4hlnnu5y3k0c2))/mileg.aspx?page=home"
+          legis: "http://www.legislature.mi.gov/"
           name: "Michigan"
           pubhealth: "Michigan Department of Health and Human Services"
           pubhealth_covid19: "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html"
