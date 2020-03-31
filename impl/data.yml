@@ -1150,14 +1150,259 @@ world:
           pubhealth_covid19_lang: "EN"
           pubhealth_web: "www.cdph.ca.gov"
           _jurisdictions:
-            BayArea:
-              iso: "SF"
-              name: "San Francisco"
-              pubhealth_covid19: "https://www.sfdph.org/dph/alerts/coronavirus.asp"
-            LosAngeles:
-              iso: "LA"
+            01:
+              iso: "01"
+              name: "Alameda"
+              pubhealth_covid19: "http://www.acphd.org/2019-ncov.aspx"
+              pubhealth_covid19_lang: "EN"
+            02:
+              iso: "02"
+              name: "Alpine"
+              pubhealth_covid19: "https://www.alpinecountyca.gov/AlertCenter.aspx?AID=COVID19-CASES-12"
+              pubhealth_covid19_lang: "EN"
+            03:
+              iso: "03"
+              name: "Amador"
+              pubhealth_covid19: "https://www.amadorgov.org/services/covid-19"
+              pubhealth_covid19_lang: "EN"
+            04:
+              iso: "04"
+              name: "Butte"
+              pubhealth_covid19: "http://www.buttecounty.net/publichealth/Home/"
+              pubhealth_covid19_lang: "EN"
+            05:
+              iso: "05"
+              name: "Calaveras"
+              pubhealth_covid19: "https://covid19.calaverasgov.us"
+              pubhealth_covid19_lang: "EN"
+            06:
+              iso: "06"
+              name: "Colusa"
+              pubhealth_covid19: "http://www.countyofcolusa.org/99/Public-Health"
+              pubhealth_covid19_lang: "EN"
+            07:
+              iso: "07"
+              name: "Contra Costa"
+              pubhealth_covid19_lang: "EN"
+            08:
+              iso: "08"
+              name: "Del Norte"
+              pubhealth_covid19_lang: "EN"
+            09:
+              iso: "09"
+              name: "El Dorado"
+              pubhealth_covid19_lang: "EN"
+            10:
+              iso: "10"
+              name: "Fresno"
+              pubhealth_covid19_lang: "EN"
+            11:
+              iso: "11"
+              name: "Glenn"
+              pubhealth_covid19_lang: "EN"
+            12:
+              iso: "12"
+              name: "Humboldt"
+              pubhealth_covid19_lang: "EN"
+            13:
+              iso: "13"
+              name: "Imperial"
+              pubhealth_covid19_lang: "EN"
+            14:
+              iso: "14"
+              name: "Inyo"
+              pubhealth_covid19_lang: "EN"
+            15:
+              iso: "15"
+              name: "Kern"
+              pubhealth_covid19_lang: "EN"
+            16:
+              iso: "16"
+              name: "Kings"
+              pubhealth_covid19_lang: "EN"
+            17:
+              iso: "17"
+              name: "Lake"
+              pubhealth_covid19_lang: "EN"
+            18:
+              iso: "18"
+              name: "Lassen"
+              pubhealth_covid19_lang: "EN"
+            19:
+              iso: "19"
               name: "Los Angeles"
               pubhealth_covid19: "http://publichealth.lacounty.gov/media/Coronavirus/locations.htm"
+              pubhealth_covid19_lang: "EN"
+              pubhealth_web: "publichealth.lacounty.gov"
+            20:
+              iso: "20"
+              name: "Madera"
+              pubhealth_covid19_lang: "EN"
+            21:
+              iso: "21"
+              name: "Marin"
+              pubhealth_covid19_lang: "EN"
+            22:
+              iso: "22"
+              name: "Mariposa"
+              pubhealth_covid19_lang: "EN"
+            23:
+              iso: "23"
+              name: "Mendocino"
+              pubhealth_covid19_lang: "EN"
+            24:
+              iso: "24"
+              name: "Merced"
+              pubhealth_covid19_lang: "EN"
+            25:
+              iso: "25"
+              name: "Modoc"
+              pubhealth_covid19_lang: "EN"
+            26:
+              iso: "26"
+              name: "Mono"
+              pubhealth_covid19_lang: "EN"
+            27:
+              iso: "27"
+              name: "Monterey"
+              pubhealth_covid19_lang: "EN"
+            28:
+              iso: "28"
+              name: "Napa"
+              pubhealth_covid19_lang: "EN"
+            29:
+              iso: "29"
+              name: "Nevada"
+              pubhealth_covid19_lang: "EN"
+            30:
+              iso: "30"
+              name: "Orange"
+              pubhealth_covid19_lang: "EN"
+            31:
+              iso: "31"
+              name: "Placer"
+              pubhealth_covid19: "https://www.placer.ca.gov/6448/Cases-in-Placer"
+              pubhealth_covid19_lang: "EN"
+            32:
+              iso: "32"
+              name: "Plumas"
+              pubhealth_covid19: "https://www.plumascounty.us/2669/Novel-Coronavirus-2019-COVID-19"
+              pubhealth_covid19_lang: "EN"
+            33:
+              iso: "33"
+              name: "Riverside"
+              pubhealth_covid19: "https://rivcoph.org/coronavirus"
+              pubhealth_covid19_lang: "EN"
+            34:
+              iso: "34"
+              name: "Sacramento"
+              pubhealth_covid19: "https://www.saccounty.net/COVID-19/Pages/default.aspx"
+              pubhealth_covid19_lang: "EN"
+            35:
+              iso: "35"
+              name: "San Benito"
+              pubhealth_covid19: "https://hhsa.cosb.us/publichealth/communicable-disease/coronavirus/"
+              pubhealth_covid19_lang: "EN"
+            36:
+              iso: "36"
+              name: "San Bernardino"
+              pubhealth_covid19: "http://wp.sbcounty.gov/dph/coronavirus/"
+              pubhealth_covid19_lang: "EN"
+            37:
+              iso: "37"
+              name: "San Diego"
+              pubhealth_covid19: "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/community_epidemiology/dc/2019-nCoV/status.html"
+              pubhealth_covid19_lang: "EN"
+            38:
+              iso: "38"
+              name: "San Francisco"
+              pubhealth_covid19: "https://www.sfdph.org/dph/alerts/coronavirus.asp"
+              pubhealth_covid19_lang: "EN"
+              pubhealth_web: "www.sfdph.org"
+            39:
+              iso: "39"
+              name: "San Joaquin"
+              pubhealth_covid19: "http://www.sjcphs.org/coronavirus.aspx"
+              pubhealth_covid19_lang: "EN"
+            40:
+              iso: "40"
+              name: "San Luis Obispo"
+              pubhealth_covid19: "https://www.emergencyslo.org/en/covid19.aspx"
+              pubhealth_covid19_lang: "EN"
+            41:
+              iso: "41"
+              name: "San Mateo"
+              pubhealth_covid19: "https://www.smchealth.org/coronavirus"
+              pubhealth_covid19_lang: "EN"
+            42:
+              iso: "42"
+              name: "Santa Barbara"
+              pubhealth_covid19: "https://www.countyofsb.org/phd/"
+              pubhealth_covid19_lang: "EN"
+            43:
+              iso: "43"
+              name: "Santa Clara"
+              pubhealth_covid19: "https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/dashboard.aspx"
+              pubhealth_covid19_lang: "EN"
+            44:
+              iso: "44"
+              name: "Santa Cruz"
+              pubhealth_covid19_lang: "EN"
+            45:
+              iso: "45"
+              name: "Shasta"
+              pubhealth_covid19_lang: "EN"
+            46:
+              iso: "46"
+              name: "Sierra"
+              pubhealth_covid19_lang: "EN"
+            47:
+              iso: "47"
+              name: "Siskiyou"
+              pubhealth_covid19_lang: "EN"
+            48:
+              iso: "48"
+              name: "Solano"
+              pubhealth_covid19_lang: "EN"
+            49:
+              iso: "49"
+              name: "Sonoma"
+              pubhealth_covid19_lang: "EN"
+            50:
+              iso: "50"
+              name: "Stanislaus"
+              pubhealth_covid19_lang: "EN"
+            51:
+              iso: "51"
+              name: "Sutter"
+              pubhealth_covid19_lang: "EN"
+            52:
+              iso: "52"
+              name: "Tehama"
+              pubhealth_covid19_lang: "EN"
+            53:
+              iso: "53"
+              name: "Trinity"
+              pubhealth_covid19_lang: "EN"
+            54:
+              iso: "54"
+              name: "Tulare"
+              pubhealth_covid19_lang: "EN"
+            55:
+              iso: "55"
+              name: "Tuolomne"
+              pubhealth_covid19_lang: "EN"
+            56:
+              iso: "56"
+              name: "Ventura"
+              pubhealth_covid19_lang: "EN"
+            57:
+              iso: "57"
+              name: "Yolo"
+              pubhealth_covid19_lang: "EN"
+            58:
+              iso: "58"
+              name: "Yuba"
         CO:
           chiefexec: "http://www.colorado.gov/governor/"
           chiefexec_fn: "Jared"
