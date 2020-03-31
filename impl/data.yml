@@ -1149,6 +1149,15 @@ world:
           pubhealth_covid19: "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx"
           pubhealth_covid19_lang: "EN"
           pubhealth_web: "www.cdph.ca.gov"
+          _jurisdictions:
+            BayArea:
+              iso: "SF"
+              name: "San Francisco"
+              pubhealth_covid19: "https://www.sfdph.org/dph/alerts/coronavirus.asp"
+            LosAngeles:
+              iso: "LA"
+              name: "Los Angeles"
+              pubhealth_covid19: "http://publichealth.lacounty.gov/media/Coronavirus/locations.htm"
         CO:
           chiefexec: "http://www.colorado.gov/governor/"
           chiefexec_fn: "Jared"
