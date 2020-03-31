@@ -35,15 +35,19 @@ defmodule Gaia20.DNSServer do
           _ -> nil
         end
 
-        answer_resource = %DNS.Resource{
-          domain: query.domain,
-          class: query.class,
-          type: query.type,
-          ttl: 60,
-          data: answer_data
-        }
-
-        %{answer_prototype | anlist: [answer_resource]}
+        case answer_data do
+          nil ->
+            %{answer_prototype | header: %{answer_prototype.header | rcode: 3}}
+          answer_data ->
+            answer_resource = %DNS.Resource{
+              domain: query.domain,
+              class: query.class,
+              type: query.type,
+              ttl: 60,
+              data: answer_data
+            }
+            %{answer_prototype | anlist: [answer_resource]}
+        end
       target -> case Gaia20.Data.get(target) do
         :nx ->
           IO.inspect(:error)
@@ -56,15 +60,19 @@ defmodule Gaia20.DNSServer do
             _ -> nil
           end
 
-          answer_resource = %DNS.Resource{
-            domain: query.domain,
-            class: query.class,
-            type: query.type,
-            ttl: 0,
-            data: answer_data
-          }
-
-          %{answer_prototype | anlist: [answer_resource]}
+          case answer_data do
+            nil ->
+              %{answer_prototype | header: %{answer_prototype.header | rcode: 3}}
+            answer_data ->
+              answer_resource = %DNS.Resource{
+                domain: query.domain,
+                class: query.class,
+                type: query.type,
+                ttl: 60,
+                data: answer_data
+              }
+              %{answer_prototype | anlist: [answer_resource]}
+          end
       end
     end
   end
