@@ -1,15 +1,34 @@
 defmodule Gaia20.Data do
   use Agent
 
+  defp sentix_receive() do
+    receive do
+      { _os_process_pid, { :fswatch, :file_event }, { _file_path, _event_list } } = event ->
+        IO.puts("data.yaml refreshed")
+        Gaia20.Data.refresh()
+    end
+    sentix_receive()
+  end
+
   def start_link(:ok) do
     data = data_from_yaml()
 
-    Agent.start_link(fn -> data end, name: __MODULE__)
+    res = Agent.start_link(fn -> data end, name: __MODULE__)
+
+    Task.start(fn ->
+      Sentix.subscribe(:data_yaml)
+
+      sentix_receive()
+    end)
+  end
+
+  def handle_cast(msg) do
+    IO.inspect(msg)
   end
 
   def refresh() do
     Agent.get_and_update(__MODULE__, fn _state ->
-      data_from_yaml()
+      {:ok, data_from_yaml()}
     end)
   end
 

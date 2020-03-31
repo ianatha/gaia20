@@ -14,7 +14,7 @@ defmodule Gaia20.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger],
+      extra_applications: [:logger, :sentix],
       mod: {Gaia20.Application, []}
     ]
   end
@@ -22,6 +22,7 @@ defmodule Gaia20.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:sentix, "~> 1.0"},
       {:yaml_encoder, "~> 0.0.1"},
       {:yamerl, "~> 0.7.0"},
       {:dns, "~> 2.1.2"},
