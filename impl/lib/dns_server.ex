@@ -50,7 +50,7 @@ defmodule Gaia20.DNSServer do
         :nx ->
           IO.inspect(:error)
           %{answer_prototype | header: %{answer_prototype.header | rcode: 3}}
-        {:redirect, redirect} ->
+        {:redirect, redirect, _aliasing} ->
           answer_data = case query.type do
             :a -> my_public_ip
             :txt -> [redirect]
