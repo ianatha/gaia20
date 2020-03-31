@@ -8,7 +8,7 @@ defmodule Gaia20.DNSServer do
   use Gaia20.GenericDNSServer
 
   def generate_soa(record) do
-    {'gaia20.com', 'community.gaia20.com', 2018110201, 3600, 1800, 604800, 86400}
+    {'dns1.gaia20.org', 'community.gaia20.com', 2018110203, 600, 600, 600, 600}
   end
 
   def generate_ns(record) do
@@ -21,7 +21,7 @@ defmodule Gaia20.DNSServer do
     Logger.info(fn -> "#{inspect(record)}" end)
     query = hd(record.qdlist)
 
-    answer_prototype = %{record | qdlist: [], anlist: [], header: %{record.header | qr: true, aa: true, rd: false}}
+    answer_prototype = %{record | anlist: [], header: %{record.header | qr: true, aa: true, rd: false}}
 
     case query.domain |> List.to_string() do
       "gaia20.com" ->
