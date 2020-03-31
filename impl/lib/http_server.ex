@@ -14,9 +14,13 @@ defmodule Gaia20.HTTPServer do
         )
 
       {:redirect, redirect} ->
+        corrected_redirect = case String.starts_with?(redirect, "http") do
+          true -> redirect
+          false -> "http://" <> redirect
+        end
         :cowboy_req.reply(
           301,
-          [{"location", redirect}],
+          [{"location", corrected_redirect}],
           "",
           request
         )
