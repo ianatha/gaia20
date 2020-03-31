@@ -7,6 +7,12 @@ defmodule Gaia20.Data do
     Agent.start_link(fn -> data end, name: __MODULE__)
   end
 
+  def refresh() do
+    Agent.get_and_update(__MODULE__, fn _state ->
+      data_from_yaml()
+    end)
+  end
+
   def get(key) do
     Agent.get(__MODULE__, fn state -> Map.get(state, key, :nx) end)
   end
