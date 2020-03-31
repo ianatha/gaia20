@@ -24,7 +24,7 @@ defmodule Gaia20.Data do
   def to_html(entries) do
     entries_rows = (entries
     |> Enum.map(fn {k, {:redirect, v}} ->
-      ~s(<tr><td><a href="http://#{k}">#{k}</a></td><td><a href="#{v}">#{v}</a></td></tr>)
+      ~s(<tr><td><a href="http://#{k}">#{k}</a></td><td>#{v}</td></tr>)
     end)
     |> Enum.join())
 
