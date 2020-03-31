@@ -1,14 +1,14 @@
 defmodule Gaia20.Data do
   use Agent
 
-  defp sentix_receive() do
-    receive do
-      { _os_process_pid, { :fswatch, :file_event }, { _file_path, _event_list } } = event ->
-        IO.puts("data.yaml refreshed")
-        Gaia20.Data.refresh()
-    end
-    sentix_receive()
-  end
+  # defp sentix_receive() do
+  #   receive do
+  #     { _os_process_pid, { :fswatch, :file_event }, { _file_path, _event_list } } = event ->
+  #       IO.puts("data.yaml refreshed")
+  #       Gaia20.Data.refresh()
+  #   end
+  #   sentix_receive()
+  # end
 
   def start_link(:ok) do
     data = data_from_yaml()
@@ -46,8 +46,24 @@ defmodule Gaia20.Data do
       |> Enum.sort_by(fn {k, _} ->
         k |> String.split(".") |> Enum.reverse()
       end)
-      |> Enum.map(fn {k, {:redirect, v}} ->
-        ~s(<tr><td><a href="http://#{k}">#{k}</a></td><td>#{v}</td></tr>)
+      |> Enum.map(fn {k, {:redirect, v, aliases}} ->
+        case aliases do
+          :alias -> ""
+          _ -> ~s(
+            <tr>
+              <td>
+                <a href="http://#{k}">
+                  #{k}
+                </a>
+              </td>
+              <td>
+                #{inspect(aliases)}
+              </td>
+              <td>
+                #{v}
+              </td>
+            </tr>)
+        end
       end)
       |> Enum.join()
 
@@ -55,6 +71,11 @@ defmodule Gaia20.Data do
       <html><body>
         <h1>gaia20.com all entries listing</h1>
         <table>
+        <tr>
+          <td><b>Long DNS Name</b></td>
+          <td><b>Normative DNS Name</b></td>
+          <td><b>Target Page</b></td>
+        </tr>
         #{entries_rows}
         </table>
       </body></html>
@@ -158,42 +179,6 @@ defmodule Gaia20.Data do
     end)
   end
 
-  @spec dns_entries(binary, %{
-          chiefexec: any,
-          iso: binary,
-          legis: any,
-          name: binary,
-          pubhealth_covid19: any,
-          pubhealth_web: any,
-          taxauth: any
-        }) :: [any]
-  def dns_entries(suffix, %{
-        iso: iso,
-        name: name,
-        pubhealth_web: pubhealth_web,
-        pubhealth_covid19: pubhealth_covid19,
-        chiefexec: chiefexec,
-        taxauth: taxauth,
-        legis: legis
-      }) do
-    names = [
-      (iso |> String.downcase()) <> suffix,
-      (name |> String.downcase() |> String.replace(" ", "_")) <> suffix
-    ]
-
-    names
-    |> Enum.flat_map(fn name ->
-      [
-        {"pubhealth.#{name}.gaia20.com", {:redirect, pubhealth_web}},
-        {"covid19.pubhealth.#{name}.gaia20.com", {:redirect, pubhealth_covid19}},
-        {"chiefexec.#{name}.gaia20.com", {:redirect, chiefexec}},
-        {"taxauth.#{name}.gaia20.com", {:redirect, taxauth}},
-        {"legis.#{name}.gaia20.com", {:redirect, legis}}
-      ]
-      |> Enum.filter(fn {_k, {:redirect, v}} -> v != "" end)
-    end)
-  end
-
   def mapify([]) do
     %{}
   end
@@ -210,28 +195,54 @@ defmodule Gaia20.Data do
     x
   end
 
+  def flatten_alias(:alias, _), do: :alias
+
+  def flatten_alias([], _), do: []
+
+  def flatten_alias([ h | t ], struct) do
+    res = struct.(h)
+    [ ~s(<a href="http://#{res}">#{res}</a>) ] ++ flatten_alias(t, struct)
+  end
+
   def jurisdiction_to_dns({name, data}, suffix \\ "") do
     {names, subsuffix} = case Map.has_key?(data, 'iso') do
       true -> {[
-        (Map.get(data, 'iso') |> String.downcase()) <> suffix,
-        (Map.get(data, 'name') |> String.downcase() |> String.replace(" ", "_")) <> suffix
+        {(Map.get(data, 'iso') |> String.downcase()) <> suffix, :alias},
+        {(Map.get(data, 'name') |> String.downcase() |> String.replace(" ", "_")) <> suffix,
+          [
+            (Map.get(data, 'iso') |> String.downcase()) <> suffix
+          ]
+        }
       ], (Map.get(data, 'iso') |> String.downcase()) <> suffix}
-      false -> {[""], ""}
+      false -> {[{"", []}], ""}
     end
 
     this_jurisdiction_dns_records =
       names
-      |> Enum.flat_map(fn name ->
+      |> Enum.flat_map(fn {name, name_type} ->
         [
-          {"pubhealth.#{name}gaia20.com",
-           {:redirect, Map.get(data, 'pubhealth_web', "")}},
-          {"covid19.pubhealth.#{name}gaia20.com",
-           {:redirect, Map.get(data, 'pubhealth_covid19', "")}},
-          {"chiefexec.#{name}gaia20.com", {:redirect, Map.get(data, 'chiefexec', "")}},
-          {"taxauth.#{name}gaia20.com", {:redirect, Map.get(data, 'taxauth', "")}},
-          {"legis.#{name}gaia20.com", {:redirect, Map.get(data, 'legis', "")}}
+          {
+            "pubhealth.#{name}gaia20.com",
+            {:redirect, Map.get(data, 'pubhealth_web', ""), flatten_alias(name_type, fn name -> "pubhealth.#{name}gaia20.com" end)}
+          },
+          {
+            "covid19.pubhealth.#{name}gaia20.com",
+            {:redirect, Map.get(data, 'pubhealth_covid19', ""), flatten_alias(name_type, fn name -> "covid19.pubhealth.#{name}gaia20.com" end)}
+          },
+          {
+            "chiefexec.#{name}gaia20.com",
+            {:redirect, Map.get(data, 'chiefexec', ""), flatten_alias(name_type, fn name -> "chiefexec.#{name}gaia20.com" end)}
+          },
+          {
+            "taxauth.#{name}gaia20.com",
+            {:redirect, Map.get(data, 'taxauth', ""), flatten_alias(name_type, fn name -> "taxauth.#{name}gaia20.com" end)}
+          },
+          {
+            "legis.#{name}gaia20.com",
+            {:redirect, Map.get(data, 'legis', ""), flatten_alias(name_type, fn name -> "legis.#{name}gaia20.com" end)}
+          }
         ]
-        |> Enum.filter(fn {_k, {:redirect, v}} -> v != "" end)
+        |> Enum.filter(fn {_k, {:redirect, v, _nt}} -> v != "" end)
       end)
 
     this_jurisdiction_dns_records ++

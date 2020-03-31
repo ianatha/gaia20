@@ -6,6 +6,7 @@ defmodule Gaia20.Application do
 
   defp children do
     [
+      {Gaia20.Data, :ok},
       {Gaia20.DNSServer, 53},
       %{
         id: Gaia20.HTTPServer,
@@ -15,7 +16,6 @@ defmodule Gaia20.Application do
         id: Sentix,
         start: {Sentix, :start_link, [:data_yaml, ["data.yml"]]}
       },
-      {Gaia20.Data, :ok},
     ]
   end
 
