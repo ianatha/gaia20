@@ -8,7 +8,7 @@ defmodule Gaia20.DNSServer do
   use Gaia20.GenericDNSServer
 
   def generate_soa(record) do
-    {'dns1.gaia20.org', 'community.gaia20.com', 2018110203, 600, 600, 600, 600}
+    {'dns1.gaia20.org', 'community.gaia20.com', 2018110203, 86400, 5, 86400, 5}
   end
 
   def generate_ns(record) do
