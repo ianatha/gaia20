@@ -218,5 +218,6 @@ defmodule Gaia20.Data do
     |> hd
     |> mapify
     |> Enum.flat_map(&jurisdiction_to_dns/1)
+    |> Enum.into(%{})
   end
 end
