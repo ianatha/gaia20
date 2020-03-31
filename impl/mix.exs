@@ -22,6 +22,8 @@ defmodule Gaia20.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:yaml_encoder, "~> 0.0.1"},
+      {:yamerl, "~> 0.7.0"},
       {:dns, "~> 2.1.2"},
       {:csv, "~> 2.3"},
       {:cowboy, "~> 1.0"}
