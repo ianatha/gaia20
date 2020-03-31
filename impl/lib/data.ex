@@ -15,11 +15,11 @@ defmodule Gaia20.Data do
 
     res = Agent.start_link(fn -> data end, name: __MODULE__)
 
-    Task.start(fn ->
-      Sentix.subscribe(:data_yaml)
+    # Task.start(fn ->
+    #   Sentix.subscribe(:data_yaml)
 
-      sentix_receive()
-    end)
+    #   sentix_receive()
+    # end)
   end
 
   def handle_cast(msg) do
