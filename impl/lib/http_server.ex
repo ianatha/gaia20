@@ -13,7 +13,7 @@ defmodule Gaia20.HTTPServer do
           request
         )
 
-      {:redirect, redirect} ->
+      {:redirect, redirect, _aliasing} ->
         corrected_redirect = case String.starts_with?(redirect, "http") do
           true -> redirect
           false -> "http://" <> redirect
