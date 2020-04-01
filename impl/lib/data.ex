@@ -57,7 +57,7 @@ defmodule Gaia20.Data do
                 </a>
               </td>
               <td>
-                #{inspect(aliases)}
+                #{aliases}
               </td>
               <td>
                 #{v}
