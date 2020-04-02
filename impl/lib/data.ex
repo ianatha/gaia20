@@ -32,7 +32,7 @@ defmodule Gaia20.Data do
     end)
   end
 
-  def get(key) do
+  def get(key) when is_bitstring(key) do
     Agent.get(__MODULE__, fn state -> Map.get(state, key, :nx) end)
   end
 
@@ -40,7 +40,36 @@ defmodule Gaia20.Data do
     Agent.get(__MODULE__, & &1)
   end
 
-  def to_html(entries) do
+  def all_with_suffix(""), do: all()
+
+  def all_with_suffix(suffix) do
+    all()
+    |> Enum.filter(fn {k, {:redirect, _, aliases}} ->
+      entry_alias_matches = case aliases do
+        :alias -> false # i'm an alias, i don't have aliases
+        aliases when is_list(aliases) ->
+          aliases |> Enum.any?(fn {:alias, aliasname} ->
+            String.ends_with?(aliasname, suffix)
+          end)
+      end
+
+      entry_alias_matches or String.ends_with?(k, suffix)
+    end)
+  end
+
+  def aliases_to_html(h) do
+    h |>
+    Enum.map(fn {:alias, al} ->
+      ~s(<a href="http://#{al}">#{al}</a>)
+    end)
+    |> Enum.join(", ")
+  end
+
+  def to_html(entries, suffix) do
+    title = case suffix do
+      "" -> "gaia20.com: All Entries Listing"
+      _ -> "gaia20.com: #{suffix} Listing"
+    end
     entries_rows =
       entries
       |> Enum.sort_by(fn {k, _} ->
@@ -57,7 +86,7 @@ defmodule Gaia20.Data do
                 </a>
               </td>
               <td>
-                #{aliases}
+                #{aliases_to_html(aliases)}
               </td>
               <td>
                 #{v}
@@ -69,7 +98,7 @@ defmodule Gaia20.Data do
 
     """
       <html><body>
-        <h1>gaia20.com all entries listing</h1>
+        <h1>#{title}</h1>
         <table>
         <tr>
           <td><b>Long DNS Name</b></td>
@@ -201,7 +230,7 @@ defmodule Gaia20.Data do
 
   def flatten_alias([ h | t ], struct) do
     res = struct.(h)
-    [ ~s(<a href="http://#{res}">#{res}</a>) ] ++ flatten_alias(t, struct)
+    [ {:alias, res} ] ++ flatten_alias(t, struct)
   end
 
   def jurisdiction_to_dns({name, data}, suffix \\ "") do
