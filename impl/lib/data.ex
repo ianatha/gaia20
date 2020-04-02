@@ -97,7 +97,7 @@ defmodule Gaia20.Data do
       |> Enum.join()
 
     """
-      <html><body>
+      <html><head><title>#{title}</title><body>
         <h1>#{title}</h1>
         <table>
         <tr>
