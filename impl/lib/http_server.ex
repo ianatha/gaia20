@@ -12,7 +12,7 @@ defmodule Gaia20.HTTPServer do
         host
     end
 
-    target
+    "." <> target
   end
 
   defp handle_lookup(request, host, state) do
