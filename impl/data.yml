@@ -1818,57 +1818,76 @@ world:
             07:
               iso: "07"
               name: "Contra Costa"
+              pubhealth: "Contra Costa Health Services"
+              pubhealth_covid19: "https://www.coronavirus.cchealth.org"
               pubhealth_covid19_lang: "EN"
+              pubhealth_web: "https://cchealth.org/public-health/"
             08:
               iso: "08"
               name: "Del Norte"
+              pubhealth: "Department of Health & Human Services"
+              pubhealth_covid19: "http://www.co.del-norte.ca.us/departments/health-human-services/public-health"
               pubhealth_covid19_lang: "EN"
             09:
               iso: "09"
               name: "El Dorado"
+              pubhealth: "Health and Human Services"
+              pubhealth_covid19: "https://www.edcgov.us/Government/hhsa/Pages/EDCCOVID-19-Cases.aspx"
               pubhealth_covid19_lang: "EN"
             10:
               iso: "10"
               name: "Fresno"
+              pubhealth: "Department of Public Health"
+              pubhealth_covid19: "https://www.co.fresno.ca.us/departments/public-health/covid-19"
               pubhealth_covid19_lang: "EN"
             11:
               iso: "11"
               name: "Glenn"
+              pubhealth_covid19: "https://www.countyofglenn.net/dept/health-human-services/public-health/covid-19"
               pubhealth_covid19_lang: "EN"
             12:
               iso: "12"
               name: "Humboldt"
+              pubhealth_covid19: "https://humboldtgov.org/2707/COVID-Test-Results"
               pubhealth_covid19_lang: "EN"
             13:
               iso: "13"
               name: "Imperial"
+              pubhealth: "Imperial County Public Health Department"
+              pubhealth_covid19: "http://www.icphd.org/health-information-and-resources/healthy-facts/covid-19/"
               pubhealth_covid19_lang: "EN"
             14:
               iso: "14"
               name: "Inyo"
+              pubhealth_covid19: "https://www.inyocounty.us/covid-19"
               pubhealth_covid19_lang: "EN"
             15:
               iso: "15"
               name: "Kern"
+              pubhealth_covid19: "https://kernpublichealth.com/2019-novel-coronavirus/"
               pubhealth_covid19_lang: "EN"
             16:
               iso: "16"
               name: "Kings"
+              pubhealth_covid19: "https://www.countyofkings.com/departments/health-welfare/public-health/coronavirus-disease-2019-covid-19"
               pubhealth_covid19_lang: "EN"
             17:
               iso: "17"
               name: "Lake"
+              pubhealth_covid19: "https://www.lakecountyil.gov/4423/Lake-County-COVID-19-Dashboard"
               pubhealth_covid19_lang: "EN"
             18:
               iso: "18"
               name: "Lassen"
+              pubhealth: "Lassen County Health and Social Services Department"
               pubhealth_covid19_lang: "EN"
+              pubhealth_web: "http://www.co.lassen.ca.us/dept/public-health/public-health"
             19:
               iso: "19"
               name: "Los Angeles"
-              pubhealth_web: "publichealth.lacounty.gov"              
               pubhealth_covid19: "http://publichealth.lacounty.gov/media/Coronavirus/locations.htm"
               pubhealth_covid19_lang: "EN"
+              pubhealth_web: "publichealth.lacounty.gov"
             20:
               iso: "20"
               name: "Madera"
@@ -1876,42 +1895,54 @@ world:
             21:
               iso: "21"
               name: "Marin"
+              pubhealth_covid19: "https://coronavirus.marinhhs.org/"
               pubhealth_covid19_lang: "EN"
             22:
               iso: "22"
               name: "Mariposa"
+              pubhealth_covid19: "http://www.mariposacounty.org/1592/COVID-19-Information"
               pubhealth_covid19_lang: "EN"
             23:
               iso: "23"
               name: "Mendocino"
+              pubhealth_covid19: "https://www.mendocinocounty.org/community/novel-coronavirus"
               pubhealth_covid19_lang: "EN"
             24:
               iso: "24"
               name: "Merced"
+              pubhealth_covid19: "https://www.co.merced.ca.us/3350/Coronavirus-Disease-2019"
               pubhealth_covid19_lang: "EN"
             25:
               iso: "25"
               name: "Modoc"
+              pubhealth: "Modoc County Health Services"
+              pubhealth_covid19: "https://www.modocsheriff.us/modoc-covid-19-incident-updates"
               pubhealth_covid19_lang: "EN"
+              pubhealth_web: "https://modochealthservices.org/"
             26:
               iso: "26"
               name: "Mono"
+              pubhealth_covid19: "https://coronavirus.monocounty.ca.gov/"
               pubhealth_covid19_lang: "EN"
             27:
               iso: "27"
               name: "Monterey"
+              pubhealth_covid19: "https://www.co.monterey.ca.us/government/departments-a-h/administrative-office/office-of-emergency-services/response/covid-19"
               pubhealth_covid19_lang: "EN"
             28:
               iso: "28"
               name: "Napa"
+              pubhealth_covid19: "https://legacy.livestories.com/s/v2/coronavirus-report-for-napa-county-ca/9065d62d-f5a6-445f-b2a9-b7cf30b846dd/"
               pubhealth_covid19_lang: "EN"
             29:
               iso: "29"
               name: "Nevada"
+              pubhealth_covid19: "https://www.mynevadacounty.com/2956/COVID-19-Cases-in-Nevada-County"
               pubhealth_covid19_lang: "EN"
             30:
               iso: "30"
               name: "Orange"
+              pubhealth_covid19: "https://occovid19.ochealthinfo.com/coronavirus-in-oc"
               pubhealth_covid19_lang: "EN"
             31:
               iso: "31"
@@ -1982,38 +2013,49 @@ world:
             44:
               iso: "44"
               name: "Santa Cruz"
+              pubhealth_covid19: "https://www.santacruzhealth.org/HSAHome/HSADivisions/PublicHealth/CommunicableDiseaseControl/Coronavirus.aspx"
               pubhealth_covid19_lang: "EN"
+              pubhealth_web: "https://www.santacruzhealth.org/"
             45:
               iso: "45"
               name: "Shasta"
+              pubhealth_covid19: "https://www.co.shasta.ca.us/covid-19/overview"
               pubhealth_covid19_lang: "EN"
             46:
               iso: "46"
               name: "Sierra"
+              pubhealth_covid19: "http://sierracounty.ca.gov/582/Coronavirus-COVID-19"
               pubhealth_covid19_lang: "EN"
             47:
               iso: "47"
               name: "Siskiyou"
+              pubhealth_covid19: "https://www.co.siskiyou.ca.us/publichealth"
               pubhealth_covid19_lang: "EN"
             48:
               iso: "48"
               name: "Solano"
+              pubhealth_covid19: "https://www.solanocounty.com/depts/ph/ncov.asp"
               pubhealth_covid19_lang: "EN"
             49:
               iso: "49"
               name: "Sonoma"
+              pubhealth_covid19: "https://socoemergency.org/emergency/novel-coronavirus/coronavirus-cases/"
               pubhealth_covid19_lang: "EN"
             50:
               iso: "50"
               name: "Stanislaus"
+              pubhealth_covid19: "http://www.schsa.org/publichealth/pages/corona-virus/"
               pubhealth_covid19_lang: "EN"
             51:
               iso: "51"
               name: "Sutter"
+              pubhealth_covid19: "https://www.suttercounty.org/doc/government/depts/cao/em/coronavirus"
               pubhealth_covid19_lang: "EN"
             52:
               iso: "52"
               name: "Tehama"
+              pubhealth: "Tehama County Health Services Agency"
+              pubhealth_covid19: "https://www.tehamacohealthservices.net/services/communicable-diseases/"
               pubhealth_covid19_lang: "EN"
             53:
               iso: "53"
@@ -2022,22 +2064,29 @@ world:
             54:
               iso: "54"
               name: "Tulare"
+              pubhealth_covid19: "https://tchhsa.org/eng/index.cfm/public-health/covid-19-updates-novel-coronavirus/"
               pubhealth_covid19_lang: "EN"
             55:
               iso: "55"
               name: "Tuolomne"
+              pubhealth_covid19: "https://www.tuolumnecounty.ca.gov/250/Public-Health"
               pubhealth_covid19_lang: "EN"
             56:
               iso: "56"
               name: "Ventura"
+              pubhealth: "Ventura County Health Care Agency"
+              pubhealth_covid19: "https://www.vcemergency.com/"
               pubhealth_covid19_lang: "EN"
             57:
               iso: "57"
               name: "Yolo"
+              pubhealth_covid19: "https://www.yolocounty.org/coronavirus-dashboard"
               pubhealth_covid19_lang: "EN"
             58:
               iso: "58"
               name: "Yuba"
+              pubhealth_covid19: "https://www.yuba.org/coronavirus/"
+              pubhealth_covid19_lang: "EN"
     CA:
       iso: "CA"
       iso3: "CAN"
