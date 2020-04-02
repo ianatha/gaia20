@@ -49,11 +49,11 @@ defmodule Gaia20.Data do
         :alias -> false # i'm an alias, i don't have aliases
         aliases when is_list(aliases) ->
           aliases |> Enum.any?(fn {:alias, aliasname} ->
-            String.ends_with?(aliasname, suffix)
+            String.ends_with?(aliasname, "." <> suffix)
           end)
       end
 
-      entry_alias_matches or String.ends_with?(k, suffix)
+      entry_alias_matches or String.ends_with?(k, "." <> suffix)
     end)
   end
 

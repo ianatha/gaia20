@@ -6,13 +6,19 @@ defmodule Gaia20.HTTPServer do
   defp suffix_from_request(request) do
     target = cond do
       ({query_string, _} = :cowboy_req.qs(request)) != "" ->
-        query_string
+        case b = Map.get(URI.decode_query(query_string), "q", :nx) do
+          :nx ->
+            {host, _} = :cowboy_req.host(request)
+            host
+          _ ->
+            b
+        end
       true ->
         {host, _} = :cowboy_req.host(request)
         host
     end
 
-    "." <> target
+    target
   end
 
   defp handle_lookup(request, host, state) do
