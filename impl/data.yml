@@ -172,11 +172,6 @@ world:
       iso: "BZ"
       iso3: "BLZ"
       name: "Belize"
-    CA:
-      iso: "CA"
-      iso3: "CAN"
-      name: "Canada"
-      pubhealth_covid19: "https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html#a1"
     CD:
       iso: "CD"
       iso3: "COD"
@@ -2043,3 +2038,75 @@ world:
             58:
               iso: "58"
               name: "Yuba"
+    CA:
+      iso: "CA"
+      iso3: "CAN"
+      name: "Canada"
+      pubhealth_covid19: "https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html#a1"
+      _jurisdictions:
+        AB:
+          iso: "AB"
+          name: "Alberta"
+          pubhealth_covid19: "https://www.alberta.ca/coronavirus-info-for-albertans.aspx"
+          pubhealth_covid19_lang: "EN"
+        BC:
+          iso: "BC"
+          name: "British Columbia"
+          pubhealth: "BC Centre for Disease Control"
+          pubhealth_covid19: "http://www.bccdc.ca/health-info/diseases-conditions/covid-19/case-counts-press-statements"
+          pubhealth_web: "http://www.bccdc.ca/"
+        MB:
+          iso: "MB"
+          name: "Manitoba"
+          pubhealth_covid19: "https://www.gov.mb.ca/covid19/index.html"
+          pubhealth_web: "https://www.gov.mb.ca/health/publichealth/index.html"
+        NB:
+          iso: "NB"
+          name: "New Brunswick"
+          pubhealth_covid19: "https://www2.gnb.ca/content/gnb/en/departments/ocmoh/cdc/content/respiratory_diseases/coronavirus.html#"
+          pubhealth_web: "https://www2.gnb.ca/content/gnb/en/departments/health.html"
+        NL:
+          iso: "NL"
+          name: "Newfoundland and Labrador"
+          pubhealth: "Health and Community Services"
+          pubhealth_covid19: "https://www.gov.nl.ca/covid-19/pandemic-update/"
+          pubhealth_web: "https://www.health.gov.nl.ca/"
+        NS:
+          iso: "NS"
+          name: "Nova Scotia"
+          pubhealth_covid19: "https://novascotia.ca/coronavirus/#cases"
+        ON:
+          iso: "ON"
+          name: "Ontario"
+          pubhealth: "Santé publique Ontario"
+          pubhealth_covid19: "https://www.publichealthontario.ca/en/diseases-and-conditions/infectious-diseases/respiratory-diseases/novel-coronavirus"
+          pubhealth_web: "https://www.publichealthontario.ca"
+        PE:
+          iso: "PE"
+          name: "Prince Edward Island"
+          pubhealth_covid19: "https://www.princeedwardisland.ca/en/topic/covid-19"
+        QC:
+          iso: "QC"
+          name: "Quebec"
+          pubhealth_covid19: "https://www.quebec.ca/en/health/health-issues/a-z/2019-coronavirus/situation-coronavirus-in-quebec/"
+        SK:
+          iso: "SK"
+          name: "Saskatchewan"
+          pubhealth_covid19: "https://www.saskatchewan.ca/government/health-care-administration-and-provider-resources/treatment-procedures-and-guidelines/emerging-public-health-issues/2019-novel-coronavirus/cases-and-risk-of-covid-19-in-saskatchewan"
+          pubhealth_covid19_lang: "EN"
+        NT:
+          iso: "NT"
+          name: "Northwest Territories"
+          pubhealth: "Health and Social Services"
+          pubhealth_covid19: "https://www.hss.gov.nt.ca/en/services/coronavirus-disease-covid-19"
+          pubhealth_covid19_lang: "EN"
+        NU:
+          iso: "NU"
+          name: "Nunavut"
+          pubhealth_covid19: "https://www.gov.nu.ca/health/information/covid-19-novel-coronavirus"
+          pubhealth_covid19_lang: "EN"
+        YT:
+          iso: "YT"
+          name: "Yukon"
+          pubhealth_covid19: "https://yukon.ca/covid-19"
+          pubhealth_covid19_lang: "EN"
